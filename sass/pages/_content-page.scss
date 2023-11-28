@@ -1,0 +1,30 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.content-page {
+
+  .content-text {
+    background-color: $white;
+    padding: 50px;
+    margin-top: 25px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 40px;
+    }
+
+    p {
+      font-size: 17px;
+      color: $black;
+      margin-top: 15px;
+    }
+
+    ul,
+    ol {
+      margin-top: 10px;
+      margin-left: 40px;
+    }
+  }
+}

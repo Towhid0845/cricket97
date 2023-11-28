@@ -379,6 +379,9 @@ nav .navbar-nav .nav-item:last-child {
   margin-left: auto !important;
   margin-right: unset !important;
 }
+.sticky-top.shadow-lg .bars {
+  display: block !important;
+}
 .sticky-top.shadow-lg .navbar-brand img {
   display: block !important;
 }
@@ -553,23 +556,6 @@ nav .navbar-nav .nav-item:last-child {
 header {
   padding: 20px 0;
 }
-header .left-info .quick-action .bars {
-  width: 35px;
-  height: 35px;
-  background-color: #f2f2f2;
-  text-align: center;
-  line-height: 35px;
-  border-radius: 2px;
-  cursor: pointer;
-  border: 1px solid #cccccc;
-  transition: all linear 0.2s;
-  font-size: 15px;
-}
-header .left-info .quick-action .bars:hover {
-  background-color: #f5b623;
-  border-color: #f5b623;
-  color: #ffffff;
-}
 header .left-info .quick-action .sidebar-menu {
   transform: translateX(-100%);
   transition: all 0.3s ease 0s;
@@ -584,9 +570,9 @@ header .left-info .quick-action .sidebar-menu {
   box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.3);
 }
 header .left-info .quick-action .sidebar-menu .close-menu {
-  position: absolute;
+  position: sticky;
   top: 0;
-  right: 0;
+  left: 200px;
   width: 40px;
   height: 40px;
   background-color: #f5b623;
@@ -599,9 +585,6 @@ header .left-info .quick-action .sidebar-menu .close-menu {
 header .left-info .quick-action .sidebar-menu .close-menu:hover {
   background-color: #222222;
   color: #ffffff;
-}
-header .left-info .quick-action .sidebar-menu ul {
-  margin-top: 40px;
 }
 header .left-info .quick-action .sidebar-menu ul li a {
   font-size: 20px;
@@ -694,6 +677,24 @@ header .right-info .shortcut-btn a:hover {
   background-color: #222222;
   color: #ffffff;
   border-color: #222222;
+}
+
+.bars {
+  width: 35px;
+  height: 35px;
+  background-color: #f2f2f2;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  transition: all linear 0.2s;
+  font-size: 15px;
+}
+.bars:hover {
+  background-color: #f5b623;
+  border-color: #f5b623;
+  color: #ffffff;
 }
 
 .top-add {
@@ -1375,6 +1376,9 @@ footer .footer-bg .right-info .follow ul li:nth-child(4) a {
   background-color: #C32AA3;
 }
 footer .footer-bg .right-info .follow ul li:nth-child(5) a {
+  background-color: #000000;
+}
+footer .footer-bg .right-info .follow ul li:nth-child(6) a {
   background-color: #FF0000;
 }
 footer .footer-bg .right-info .store-logo {
@@ -1541,7 +1545,7 @@ footer .footer-bg .developed p a {
   background-color: #5576bd;
 }
 .share-icon .icons a:nth-child(2) {
-  background-color: #1da1f2;
+  background-color: #000000;
 }
 .share-icon .icons a:nth-child(2):hover {
   background-color: #3ab4ff;
@@ -1553,21 +1557,27 @@ footer .footer-bg .developed p a {
   background-color: #2391ff;
 }
 .share-icon .icons a:nth-child(4) {
-  background-color: #52cc60;
+  background-color: #000000;
 }
 .share-icon .icons a:nth-child(4):hover {
-  background-color: #6ce67a;
+  background-color: #08EFEF;
 }
 .share-icon .icons a:nth-child(5) {
-  background-color: #f70000;
+  background-color: #52cc60;
 }
 .share-icon .icons a:nth-child(5):hover {
-  background-color: #ff4d4d;
+  background-color: #6ce67a;
 }
 .share-icon .icons a:nth-child(6) {
-  background-color: #acacac;
+  background-color: #f70000;
 }
 .share-icon .icons a:nth-child(6):hover {
+  background-color: #ff4d4d;
+}
+.share-icon .icons a:nth-child(7) {
+  background-color: #acacac;
+}
+.share-icon .icons a:nth-child(7):hover {
   background-color: #cfcfcf;
 }
 
@@ -1832,6 +1842,9 @@ footer .footer-bg .developed p a {
   padding-bottom: 0;
   margin-bottom: 0;
 }
+.category-wise-news-list-main .left-image-right-text-widget:hover .text h4 {
+  color: #f5b623;
+}
 
 .view-more-category-news .view-more-btn {
   background-color: red;
@@ -1984,6 +1997,28 @@ footer .footer-bg .developed p a {
 }
 .writer-list-item .text .social-icon a:nth-child(3) {
   background-color: #0a66c2;
+}
+
+.content-page .content-text {
+  background-color: #ffffff;
+  padding: 50px;
+  margin-top: 25px;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+}
+.content-page .content-text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.content-page .content-text p {
+  font-size: 17px;
+  color: #222222;
+  margin-top: 15px;
+}
+.content-page .content-text ul,
+.content-page .content-text ol {
+  margin-top: 10px;
+  margin-left: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

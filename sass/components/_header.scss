@@ -8,24 +8,24 @@ header {
 
   .left-info {
     .quick-action {
-      .bars {
-        width: 35px;
-        height: 35px;
-        background-color: $gray;
-        text-align: center;
-        line-height: 35px;
-        border-radius: 2px;
-        cursor: pointer;
-        border: 1px solid $border;
-        transition: all linear .2s;
-        font-size: 15px;
+      // .bars {
+        //   width: 35px;
+        //   height: 35px;
+        //   background-color: $gray;
+        //   text-align: center;
+        //   line-height: 35px;
+        //   border-radius: 2px;
+        //   cursor: pointer;
+        //   border: 1px solid $border;
+        //   transition: all linear .2s;
+        //   font-size: 15px;
 
-        &:hover {
-          background-color: $themeColor;
-          border-color: $themeColor;
-          color: $white;
-        }
-      }
+      //   &:hover {
+        //     background-color: $themeColor;
+        //     border-color: $themeColor;
+        //     color: $white;
+        //   }
+        // }
 
       .sidebar-menu {
         transform: translateX(-100%);
@@ -41,9 +41,9 @@ header {
         box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.3);
 
         .close-menu {
-          position: absolute;
+          position: sticky;
           top: 0;
-          right: 0;
+          left: 200px;
           width: 40px;
           height: 40px;
           background-color: $themeColor;
@@ -59,9 +59,7 @@ header {
           }
         }
 
-        ul {
-          margin-top: 40px;
-
+                                ul {
           li {
             a {
               @include font(20px, 500);
@@ -188,5 +186,23 @@ header {
         }
       }
     }
+  }
+}
+.bars {
+  width: 35px;
+  height: 35px;
+  background-color: $gray;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid $border;
+  transition: all linear .2s;
+  font-size: 15px;
+
+  &:hover {
+    background-color: $themeColor;
+    border-color: $themeColor;
+    color: $white;
   }
 }
