@@ -186,8 +186,7 @@ header {
         }
       }
     }
-  }
-}
+        }
 .bars {
   width: 35px;
   height: 35px;
@@ -200,9 +199,10 @@ header {
   transition: all linear .2s;
   font-size: 15px;
 
-  &:hover {
+&:hover {
     background-color: $themeColor;
     border-color: $themeColor;
     color: $white;
   }
+}
 }

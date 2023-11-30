@@ -3,28 +3,36 @@
 
 .content-page {
 
-  .content-text {
+.content-text {
     background-color: $white;
     padding: 50px;
     margin-top: 25px;
-    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+font-family: Roboto, sans-serif;
 
-    h4 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-top: 40px;
-    }
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+margin-top: 30px;
+}
 
-    p {
-      font-size: 17px;
-      color: $black;
-      margin-top: 15px;
-    }
+p {
+  font-size: 17px;
+  color: $black;
+margin-bottom: 20px;
+  margin-top: 5px;
+}
 
-    ul,
-    ol {
-      margin-top: 10px;
-      margin-left: 40px;
-    }
+ul,
+ol {
+  margin-top: 10px;
+  margin-left: 40px;
+li {
+    padding-bottom: 8px;
   }
+}
+
+ol>li::marker {
+  font-weight: bold;
+}
+}
 }

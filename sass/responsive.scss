@@ -425,9 +425,9 @@
     height: 239px;
   }
 
-  .media-widget-with-bg {
-    margin-top: 0;
-  }
+                // .media-widget-with-bg {
+                //   margin-top: 0;
+                // }
 
   .video-widget-with-slider {
     margin-top: 0;
@@ -443,6 +443,9 @@
   header .right-info .shortcut-btn {
     margin-top: 14px;
   }
+.contact-us .tab-widget {
+  margin-top: 24px !important;
+}
 }
 
 @media (min-width:576px) and (max-width:767.98px) {
@@ -548,4 +551,7 @@
   }
 
   // news details page end
+.content-page .content-text {
+  padding: 35px;
+}
 }

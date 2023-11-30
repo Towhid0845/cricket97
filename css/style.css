@@ -226,6 +226,10 @@ body {
   font-size: 12px;
 }
 
+.shaddow-div {
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+}
+
 .custom-cursor__cursor {
   width: 25px;
   height: 25px;
@@ -380,7 +384,22 @@ nav .navbar-nav .nav-item:last-child {
   margin-right: unset !important;
 }
 .sticky-top.shadow-lg .bars {
+  width: 35px;
+  height: 35px;
+  background-color: #f2f2f2;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  transition: all linear 0.2s;
+  font-size: 15px;
   display: block !important;
+}
+.sticky-top.shadow-lg .bars:hover {
+  background-color: #f5b623;
+  border-color: #f5b623;
+  color: #ffffff;
 }
 .sticky-top.shadow-lg .navbar-brand img {
   display: block !important;
@@ -678,8 +697,7 @@ header .right-info .shortcut-btn a:hover {
   color: #ffffff;
   border-color: #222222;
 }
-
-.bars {
+header .bars {
   width: 35px;
   height: 35px;
   background-color: #f2f2f2;
@@ -691,7 +709,7 @@ header .right-info .shortcut-btn a:hover {
   transition: all linear 0.2s;
   font-size: 15px;
 }
-.bars:hover {
+header .bars:hover {
   background-color: #f5b623;
   border-color: #f5b623;
   color: #ffffff;
@@ -1968,6 +1986,9 @@ footer .footer-bg .developed p a {
   margin: 0 auto 14px;
   margin-top: 5px;
 }
+.writer-list-item .text {
+  height: 130px;
+}
 .writer-list-item .text a:hover h4 {
   color: #f5b623;
 }
@@ -2003,22 +2024,53 @@ footer .footer-bg .developed p a {
   background-color: #ffffff;
   padding: 50px;
   margin-top: 25px;
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+  font-family: Roboto, sans-serif;
 }
 .content-page .content-text h4 {
   font-size: 20px;
   font-weight: 600;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .content-page .content-text p {
   font-size: 17px;
   color: #222222;
-  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 .content-page .content-text ul,
 .content-page .content-text ol {
   margin-top: 10px;
   margin-left: 40px;
+}
+.content-page .content-text ul li,
+.content-page .content-text ol li {
+  padding-bottom: 8px;
+}
+.content-page .content-text ol > li::marker {
+  font-weight: bold;
+}
+
+.contact-us .contact-text {
+  padding: 50px;
+  font-family: Roboto, sans-serif;
+}
+.contact-us .contact-text .title {
+  color: #f5b623;
+  border-bottom: 1px solid #f5b623;
+  font-size: 42;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+}
+.contact-us .contact-text h2 {
+  color: #001246;
+  font-size: 22px;
+  font-weight: bold;
+}
+.contact-us .contact-text p {
+  font-size: 18px;
+  color: #222222;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.contact-us {
+
+  .contact-text {
+    padding: 50px;
+    font-family: Roboto, sans-serif;
+
+    .title {
+      color: $themeColor;
+      border-bottom: 1px solid $themeColor;
+      font-size: 42;
+      font-weight: 700;
+      margin-bottom: 40px;
+      padding-bottom: 15px;
+    }
+
+    h2 {
+      color: #001246;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 18px;
+      color: $black;
+      margin-bottom: 30px;
+    }
+  }
+}

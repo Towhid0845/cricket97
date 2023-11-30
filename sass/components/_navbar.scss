@@ -185,7 +185,22 @@ nav {
   }
 
     .bars {
+      width: 35px;
+        height: 35px;
+        background-color: $gray;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 2px;
+        cursor: pointer;
+        border: 1px solid $border;
+        transition: all linear .2s;
+        font-size: 15px;
       display: block !important;
+&:hover {
+    background-color: $themeColor;
+    border-color: $themeColor;
+    color: $white;
+  }
     }
   .navbar-brand {
     img {
